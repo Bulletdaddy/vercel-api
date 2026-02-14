@@ -36,7 +36,7 @@ app.get('/api', (req, res) => {
 
   // 10 messages ka batch ek saath
 
-  const batch = Array.from({length: 8}, () => 
+  const batch = Array.from({length: 4}, () => 
 
     heavyMessages[Math.floor(Math.random() * heavyMessages.length)]
 
