@@ -8,15 +8,19 @@ app.use((req, res, next) => {
 });
 
 app.get('/', (req, res) => {
-  res.json({ 
-    message: "🎭👙ズ꧁𝑂𝑌𝐸 𝑇𝐸𝑅𝐸 𝐴𝑁𝐾𝑈-𝑃𝐴𝑁𝐾𝑈 𝐾𝐼 𝐵𝐻𝐸𝑁 𝐾𝐼 𝐶𝐻𝑈𝑇 𝑃𝐴𝑅 𝐿𝑂𝐷𝐸 𝑀𝐴𝑅𝑈 ꧂ズ👙🎭"
-  });
+  const messages = [
+    "🎭👙ズ꧁𝑂𝑌𝐸 𝑇𝐸𝑅𝐸 𝐴𝑁𝐾𝑈-𝑃𝐴𝑁𝐾𝑈 𝐾𝐼 𝐵𝐻𝐸𝑁 𝐾𝐼 𝐶𝐻𝑈𝑇 𝑃𝐴𝑅 𝐿𝑂𝐷𝐸 𝑀𝐴𝑅𝑈 ꧂ズ👙🎭"
+  ];
+  const randomMsg = messages[Math.floor(Math.random() * messages.length)];
+  res.json({ message: randomMsg });
 });
 
 app.get('/api', (req, res) => {
-  res.json({ 
-    message: "🎭👙ズ꧁𝑂𝑌𝐸 𝑇𝐸𝑅𝐸 𝐴𝑁𝐾𝑈-𝑃𝐴𝑁𝐾𝑈 𝐾𝐼 𝐵𝐻𝐸𝑁 𝐾𝐼 𝐶𝐻𝑈𝑇 𝑃𝐴𝑅 𝐿𝑂𝐷𝐸 𝑀𝐴𝑅𝑈 ꧂ズ👙🎭"
-  });
+  const messages = [
+    "🎭👙ズ꧁𝑂𝑌𝐸 𝑇𝐸𝑅𝐸 𝐴𝑁𝐾𝑈-𝑃𝐴𝑁𝐾𝑈 𝐾𝐼 𝐵𝐻𝐸𝑁 𝐾𝐼 𝐶𝐻𝑈𝑇 𝑃𝐴𝑅 𝐿𝑂𝐷𝐸 𝑀𝐴𝑅𝑈 ꧂ズ👙🎭"
+  ];
+  const randomMsg = messages[Math.floor(Math.random() * messages.length)];
+  res.json({ message: randomMsg });
 });
 
 module.exports = app;
